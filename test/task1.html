@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cleaning Services Template">
+    <title>Cleaning Services</title>
+    <link rel="stylesheet" href="./task1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="contact">
+            <div class="email">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" style="fill:#ffffff"
+                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M215.4 96H144 107.8 96v8.8V144v40.4 89L.2 202.5c1.6-18.1 10.9-34.9 25.7-45.8L48 140.3V96c0-26.5 21.5-48 48-48h76.6l49.9-36.9C232.2 3.9 243.9 0 256 0s23.8 3.9 33.5 11L339.4 48H416c26.5 0 48 21.5 48 48v44.3l22.1 16.4c14.8 10.9 24.1 27.7 25.7 45.8L416 273.4v-89V144 104.8 96H404.2 368 296.6 215.4zM0 448V242.1L217.6 403.3c11.1 8.2 24.6 12.7 38.4 12.7s27.3-4.4 38.4-12.7L512 242.1V448v0c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64v0zM176 160H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H176c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                </svg>
+                <span>Info@gmail.com</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                            </svg> </a>
+                    </li>
+                    <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav class="navbar">
+                <div class="navbar-burger">
+                    <div class="burger-icon">
+                        <p>
+                            <a class="btn" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" style="fill:#000000;"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="navbar-logo-left">
+                    <img src="https://prodigyitech.com/churu/assets/img/logo.png" alt="Logo Left">
+                </div>
+                <div class="navbar-buttons">
+                    <a href="#">Home</a>
+                    <a href="#">ABOUT US</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">SERVICES</button>
+                        <div class="dropdown-content">
+                            <a href="#">General Cleaning</a>
+                            <a href="#">Deep Cleaning</a>
+                            <a href="#">Sofa Cleaning</a>
+                        </div>
+                    </div>
+                    <a href="#">GALLERY</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+                <div class="navbar-logo-right">
+                    <img src="https://prodigyitech.com/churu/assets/img/icon/phone-call.png" alt="Logo Right">
+                    <div>
+                        <span>Have any question?</span>
+                        <h5>465165156</h5>
+                    </div>
+                </div>
+               
+            </nav>
+            <div class="collapse " id="collapseExample">
+                <div class="buttons">
+                    <a href="#">Home</a>
+                    <span class="line"></span>
+                    <a href="#">ABOUT US</a>
+                    <span class="line"></span>
+                        <a class="btn" data-bs-toggle="collapse" href="#services" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                        SERVICES
+                        </a>
+                    <span class="line"></span>
+
+                        <div class="collapse dropdown-content-services" id="services">
+                            <a href="#">General Cleaning</a>
+
+                            <span class="line"></span>
+                            <a href="#">Deep Cleaning</a>
+
+                            <span class="line"></span>
+                            <a href="#">Sofa Cleaning</a>
+                            <span class="line"></span>
+                        </div>
+                    <a href="#">GALLERY</a>
+                    <span class="line"></span>
+
+                    <a href="#">CONTACT US</a>
+                    <span class="line"></span>
+
+                </div>
+          </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+    <!-- Banner -->
+    <div class="cleaning">
+        <div class="cleaning-container">
+            <div class="text-banner">
+                <h2>Cleaning your </h2><span>worries away</span>
+                <p>
+                    We Provide Top Quality Cleaning Services for both residential and commercial spaces .
+                 </p>
+            </div>
+            <div>
+                <div action="/" class="form">
+                    <h2>Free Estimate</h2>
+                    <p>Get a quick response within 24 hours</p>
+                    <form action="" method="" class="contact-form">
+                        <input type="text" placeholder="name">
+                        <input type="password" placeholder="Email*">
+                        <input type="phone" placeholder="phone">
+                        <div class="dropdown dropdown-choose-service">
+                            <a class="btn dropdown-toggle" id="choose-service" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose service
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                          <div class="estimate-div">
+                              <button type="submit" class="estimate-btn"> <span>Get Estimate<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span></button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="shape-bottom-center">
+        </div>
+    </div>
+    <!-- End Of Banner -->
+    <!-- start of service -->
+    <div class="service-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="shape" style="background-image: url(https://prodigyitech.com/churu/assets/img/shape/21.png);"></div>
+                        <div class="thumb">
+                            <img src="https://prodigyitech.com/churu/assets/img/icon/general.png" alt="Icon">
+                        </div>
+                        <h4><a href="#">General Cleaning</a></h4>
+                        <p>
+                          General cleaning refers to the process of tidying up and maintaining cleanliness in various areas, such as homes, offices, or public spaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="shape" style="background-image: url(https://prodigyitech.com/churu/assets/img/shape/21.png);"></div>
+                        <div class="thumb">
+                            <img src="https://prodigyitech.com/churu/assets/img/icon/deep.png" alt="Icon">
+                        </div>
+                        <h4><a href="#">General Cleaning</a></h4>
+                        <p>
+                          General cleaning refers to the process of tidying up and maintaining cleanliness in various areas, such as homes, offices, or public spaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="shape" style="background-image: url(https://prodigyitech.com/churu/assets/img/shape/21.png);"></div>
+                        <div class="thumb">
+                            <img src="https://prodigyitech.com/churu/assets/img/icon/sofa.png" alt="Icon">
+                        </div>
+                        <h4><a href="#">General Cleaning</a></h4>
+                        <p>
+                          General cleaning refers to the process of tidying up and maintaining cleanliness in various areas, such as homes, offices, or public spaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="item">
+                        <div class="shape" style="background-image: url(https://prodigyitech.com/churu/assets/img/shape/21.png);"></div>
+                        <div class="thumb">
+                            <img src="	https://prodigyitech.com/churu/assets/img/icon/mattress.png" alt="Icon">
+                        </div>
+                        <h4><a href="#">General Cleaning</a></h4>
+                        <p>
+                          General cleaning refers to the process of tidying up and maintaining cleanliness in various areas, such as homes, offices, or public spaces.
+                        </p>
+                    </div>
+                </div>
+             
+            </div>             
+            </div>
+            
+        </div>
+    </div>
+    <!-- End of service -->
+
+    <!-- Questions -->
+    <div class="questions">
+        <div>
+            <div class="div-container">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                <div class="questions-divs">
+                    <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne"  aria-expanded="false" aria-controls="collapseOne">
+                        How do I make a checklist for a cleaning service? 
+                    </h4>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#999999"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></span>
+                </div>
+            </a>
+                <div id="collapseOne" class="collapse">
+                    <h5>Bedrooms, living areas and other rooms</h5>
+                    <ol>
+                        <li>Dust furniture tops, sides and fronts.</li>
+                        <li>Vacuum and/or mop floors.</li>
+                        <li>Clean glass surfaces and mirrors.</li>
+                        <li>Wipe window sills and blinds.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="div-container">
+                <a class="btn" data-bs-toggle="collapse" href="#collapse2" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                <div class="questions-divs">
+                    <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse2"  aria-expanded="false" aria-controls="collapseOne">
+                        How do you clean efficiently?
+                    </h4>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#999999"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></span>
+                </div>
+            </a>
+                <div id="collapse2" class="collapse">
+                    <h5>Fast House Cleaning Tips</h5>
+                    <ol>
+                        <li>Clean the whole house, not one room at time</li>
+                        <li>Gather all your cleaning tools in a caddy.</li>
+                        <li>Clear the clutter.</li>
+                        <li>Disinfect countertops and surface areas</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="div-container">
+                <a class="btn" data-bs-toggle="collapse" href="#collapse3" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample">
+                <div class="questions-divs">
+                    <h4 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse3"  aria-expanded="false" aria-controls="collapseOne">
+                        What are the benefits of cleaning?
+                    </h4>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#999999"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></span>
+                </div>
+            </a>
+                <div id="collapse3" class="collapse">
+                    <h5>4 Surprising Health Benefits of a Clean Home</h5>
+                    <ol>
+                        <li>It Keeps You Mentally Healthy</li>
+                        <li>It Pests Keep Away.</li>
+                        <li>The Home is Inviting.</li>
+                        <li>Tips For Keeping Your Home Clean.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Questions -->
+
+    <!-- start of foorter -->
+    <footer>
+        <div class="container">
+            <div class="">
+                <div class="row footer-back">
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                        <div class="about">
+                            <img src="https://prodigyitech.com/churu/assets/img/logo-light.png" alt="Logo">
+                            <p>
+                                Cleaning Services offers comprehensive cleaning services to help you maintain a clean and healthy living environment. 
+                            </p>
+                            <form action="#" class="email-form">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit" class="sub-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </button>  
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-items">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Quick LInk</h4>
+                            <ul>
+                                <li>
+                                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> About us</a>
+                                </li>
+                                <li>
+                                    <a href="service.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Services</a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Contact US</a>
+                                </li>
+                                <li>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-items">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Services</h4>
+                            <ul>
+                              <li>
+                                    <a href="service1.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> General Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service2.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Deep Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service3.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Sofa Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service4.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Mattress Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service5.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Glass Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service6.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Kitchen Cleaning</a>
+                                </li>
+                                   <li>
+                                    <a href="service7.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Vaccuming</a>
+                                </li>
+                                <li>
+                                    <a href="service8.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Party Help</a>
+                                </li>
+                                     <li>
+                                    <a href="service9.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Baby sitting</a>
+                                </li>
+                                   <li>
+                                    <a href="service10.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i> Floor Cleaning</a>
+                                </li>
+                                <li>
+                                    <a href="service11.html"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" style="fill:#666666"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></i>Office Girl/Boy</a>
+                                </li>
+                             
+                             
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-items">
+                        <div class="f-item contact-widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                           cleaning services,<br>Office no , tower, <br>
+                                    </li>
+                                   
+                                    <li>
+                                        <div class="content">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill:#ffffff"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                                            <strong style="color: #fff; margin-top: 1rem;">Phone:</strong><br>
+                                            <a href="tel:+971505053952">546519684</a><br>           
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of foorter -->
+    <footer>
+        <div class="bottom-footer">
+            <p>© Copyright 2022. All Rights Reserved by <a href="#"> Cleaning Services</a></p>
+            <div>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+
+                        <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="cleaner-girl">
+            <img src="https://prodigyitech.com/churu/assets/img/illustration/2.png" alt="illustration">
+        </div>
+    </footer>
+
+
+
+<script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,793 @@
+:root {
+  --color-primary: #1239ac;
+  --color-gray: #eef0f6;
+  --color-paragraph: #666666;
+  --font-default: 'Yantramanav', sans-serif;
+  --secoundry-gray: #f9f9f9;
+  --color-yellow: #ffb400;
+  --dark: #06278a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox */
+  -webkit-font-smoothing: antialiased;
+  /* WebKit  */
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--home-background-color) !important;
+}
+
+.contact {
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.email {
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar {
+  position: sticky !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 100%;
+}
+
+.navbar-logo-left img,
+.navbar-logo-right img {
+  height: 60px;
+}
+
+.navbar-logo-right {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar-logo-left,
+.navbar-logo-right {
+  flex: 1;
+}
+
+.navbar-buttons {
+  flex: 3;
+  text-align: center;
+  font-size: 14px;
+}
+
+.navbar-buttons a:hover {
+  color: var(--color-primary);
+}
+
+.navbar-buttons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+
+@media (max-width: 1000px) {
+  .cleaning-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-banner > h2, .text-banner > span, .text-banner > p {
+    padding-right: 0 !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cleaning-container > div{
+    width: 100% !important;
+    height: 150%;
+  }
+
+  .churu{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .div-container{
+    width: 100% !important;
+  }
+
+  .questions > div{
+    margin-left: 0 !important;
+  }
+
+  .Enquire{
+    flex-direction: column;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .Enquire > .form-data{
+    width: 92%;
+    margin-left: 5%;
+  }
+
+  .navbar-buttons {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    text-align: right;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .contact {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .collapse {
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .contact {
+    display: none;
+  }
+
+  .navbar-logo-right {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: center;
+    width: 85%;
+  }
+
+  .navbar-burger {
+    justify-content: left;
+    width: 30%;
+  }
+
+  .navbar-logo-left {
+    width: 70%;
+    justify-content: left;
+  }
+
+  .collapse {
+    padding-left: 1%;
+  }
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: inherit;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.collapse {
+  display: block;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 1rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #000;
+  padding: 0;
+  padding-top: 2px;
+}
+
+.line {
+  width: 80%;
+  display: block;
+  height: 1px;
+  background-color: #797272;
+
+}
+
+.aboutUs {
+  display: flex;
+  width: 100%;
+  padding-top: 120px;
+  background-color: var(--color-gray);
+}
+
+.container {
+  display: flex;
+  width: 100% !important;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: start;
+}
+
+.cleaning{
+  position: relative;
+}
+
+.cleaning-container > div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+}
+
+.cleaning-container div:first-child{
+  align-items: start;
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-primary);
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.cleaning-container {
+  display: flex;
+  padding: 3rem;
+  background-image: url("https://prodigyitech.com/churu/assets/img/b2.jpg");
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  padding-bottom: 3rem;
+}
+
+.cleaning::after{
+  background-color: var(--color-primary);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.shape-bottom-center {
+  background-image: url("https://prodigyitech.com/churu/assets/img/shape/32.png");
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-position: bottom;
+  height: 80%;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+
+}
+
+.form,
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  width: 100%;
+  height: 30rem;
+  z-index: 3;
+}
+
+.contact-form input {
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--secoundry-gray);
+  border: none;
+  height: 3rem;
+  padding-left: 1rem;
+  color: #232323;
+  outline-color: #797272;
+}
+
+.form {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.text-banner h2,
+.text-banner span {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 30px;
+  color: #fff;
+  z-index: 2;
+}
+
+.text-banner p {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 18px;
+  line-height: 32px;
+  z-index: 2;
+  padding-right: 30%;
+}
+
+.text-banner span {
+  font-weight: 200;
+
+}
+
+
+#choose-service {
+  background-color: var(--secoundry-gray);
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-choose-service {
+  width: 100%;
+  align-items: start;
+  text-align: left;
+}
+
+.dropdown-menu{
+  width: 100%;
+}
+
+.service-div {
+  background-image: url("https://prodigyitech.com/churu/assets/img/shape/33.png");
+  margin-top: 5rem;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  padding-bottom: 4rem;
+}
+
+
+.estimate-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  gap: 1rem;
+}
+
+.estimate-btn{
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.thumb{
+  background-color: var(--secoundry-gray);
+  padding: 1rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.thumb > img{
+  width: 80px;
+  background-color: var(--secoundry-gray);
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  padding-top: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  animation: slideBackground 0.5s linear forwards;
+}
+
+.item p,
+.item h4,
+.item:hover{
+  color: #fff;
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+    background-color: var(--color-primary);
+  }
+}
+
+.item p,
+.item h4 {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-family: var(--font-default);
+}
+
+.item p{
+  opacity: 0.8;
+}
+
+.item h4 a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.churu{
+  width: 100%;
+  background-color: var(--color-gray);
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.images{
+  position: relative;
+}
+
+.prim-img{
+  display: flex;
+  justify-content: center;
+}
+
+.prim-img > img{
+  width: 500px;
+  border-radius: 50%;
+}
+
+.team-mem{
+  top: 8%;
+  position: absolute;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  padding-top: 2rem;
+  background-color: var(--color-yellow);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sec-img{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  right: -10px;
+  background-color: #fff;
+  border-radius: 50%;
+  
+}
+
+.sec-img img{
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.article{
+  width: 100%;
+  padding-left: 4rem;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+article > p{
+  color: var(--color-paragraph);
+}
+
+.art-serv{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.art-serv-sec{
+  margin-left: 2rem;
+}
+
+.btn.btn-theme.effect {
+  color: #fff;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.btn.btn-theme.effect:hover{
+  color: var(--color-primary);
+  background-color: #fff;
+}
+
+
+.questions{
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://prodigyitech.com/churu/assets/img/bandown.jpg");
+  padding-top: 3rem;
+  background-position: center;
+}
+
+.questions > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 10rem;
+  gap: 2rem;
+
+}
+
+.questions > div > .div-container > a > .questions-divs{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0px 0 10px 0px;
+  cursor: pointer;
+}
+
+.div-container{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+#collapseOne, #collapse2, #collapse3{
+  width: 96%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 2%;
+  
+}
+
+
+
+footer{
+  background-color: var(--color-primary);
+}
+
+.about > img{
+  width: 15rem;
+}
+
+.email-form{
+  display: flex;
+  height: 3rem;
+}
+
+.email-form > input{
+  border-radius: 0;
+}
+
+.sub-btn{
+  background-color: var(--color-yellow);
+  border: none;
+  height: 100%;
+  width: 3rem;
+}
+
+.footer-back > div{
+  
+  background-color: var(--color-primary);
+}
+
+.footer-logo{
+  
+  border-width: 0 1px 0 0;
+  border-color: #ffffff80;
+  height: 80%;
+  margin-top: 1rem !important;
+  border-style: solid;
+}
+
+.footer-logo > .about{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+
+}
+
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: 2rem !important;
+
+}
+
+.footer-items ul{
+  list-style-type: none !important;
+  color: #ffffff80;
+  padding: 0;
+
+}
+
+.footer-items h4{
+  color: #fff
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #ffffff80;
+}
+
+.bottom-footer{
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.bottom-footer p{
+  align-items: center;
+  color: #ffffff90;
+}
+
+.bottom-footer a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.bottom-footer > div{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cleaner-girl{
+  position: absolute;
+  animation: moveAnimation 4s infinite linear;
+  bottom: 0;
+}
+
+.cleaner-girl > img{
+  width: 120px;
+  height: 300px;
+
+}
+
+@keyframes moveAnimation {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 200px;
+  }
+  100% {
+    right: 0;
+  }
+}

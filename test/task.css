@@ -1,0 +1,239 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 3rem;
+}
+/* Shared Styles */
+.button, .slider, .toggle {
+    margin-top: 1rem;
+}
+
+/* Interactive Elements */
+.interactive-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.interactive-element {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s, width 0.3s, height 0.3s;
+    cursor: pointer;
+}
+
+.interactive-element:hover {
+    background-color: #ffffff;
+    width: 180px;
+    height: 180px;
+}
+
+.interactive-element.clicked {
+    background-color: #e74c3c;
+}
+
+.icon {
+    font-size: 24px;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+.hint {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #777;
+    transition: color 0.3s;
+}
+
+/* Slider Styles */
+.slider {
+    width: 100%;
+    position: relative;
+}
+
+.slider-input {
+    width: 100%;
+}
+
+.slider-fill {
+    height: 4px;
+    background-color: #007bff;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+}
+
+.slider-input:focus + .slider-fill {
+    background-color: #e74c3c;
+}
+
+/* Pseudo-Elements Section */
+.particle-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.particle-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    animation: fallingParticles 4s linear infinite;
+}
+
+.card::before {
+    left: 20px;
+    opacity: 0.8;
+    transform-origin: center center;
+}
+
+.card::after {
+    left: 60px;
+    opacity: 0.6;
+    transform-origin: center center;
+}
+
+.card::before {
+    left: 100px;
+    opacity: 0.7;
+    transform-origin: center center;
+}
+
+.card::after {
+    left: 140px;
+    opacity: 0.5;
+    transform-origin: center center;
+}
+
+@keyframes fallingParticles {
+    0% {
+        transform: translateY(-30px) scale(0);
+    }
+    100% {
+        transform: translateY(250px) scale(1);
+        opacity: 0;
+    }
+}
+
+.card:hover {
+    background-color: #e74c3c;
+}
+
+
+
+.card:hover {
+    background-color: #e74c3c;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    header, footer {
+        font-size: 14px;
+    }
+}
+/* 3D Elements Section */
+.cube-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.cube {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: rotate 10s linear infinite;
+}
+
+.face {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    opacity: 0.8;
+    border: 1px solid #333;
+}
+
+.front { background-color: #3498db; transform: translateZ(75px); }
+.back { background-color: #e74c3c; transform: rotateY(180deg) translateZ(75px); }
+.right { background-color: #2ecc71; transform: rotateY(90deg) translateZ(75px); }
+.left { background-color: #f39c12; transform: rotateY(-90deg) translateZ(75px); }
+.top { background-color: #9b59b6; transform: rotateX(90deg) translateZ(75px); }
+.bottom { background-color: #34495e; transform: rotateX(-90deg) translateZ(75px); }
+
+@keyframes rotate {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+/* Custom Cursors Section */
+/* Custom Cursors Section */
+.custom-cursor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    cursor: pointer; 
+}
+.custom-cursor:hover {
+    background-color: #626c72;
+    color: #fff;
+}
